@@ -1,18 +1,54 @@
 @font-face {
-    font-family: 'Figtree-500';
+    font-family: 'figtree-500';
     src: url('.././assets/fonts/Figtree-Medium.ttf');
     font-weight: 500;
 }
+
 @font-face {
-    font-family: 'Figtree-800';
+    font-family: 'figtree-800';
     src: url('.././assets/fonts/Figtree-ExtraBold.ttf');
     font-weight: 800;
 }
 
-body{
+body {
     font-size: 16px;
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .text-preset-1 {
+        @apply font-[figtree-800] text-[24px] leading-[150%] tracking-normal;
+    }
+
+    .text-preset-2 {
+        @apply font-[figtree-500] text-[16px] leading-[150%] tracking-normal;
+    }
+
+    .text-preset-3 {
+        @apply font-[figtree-500] text-[14px] leading-[150%] tracking-normal;
+    }
+
+    .text-preset-3-bold {
+        @apply font-[figtree-800] text-[14px] leading-[150%] tracking-normal;
+    }
+
+    /* Blog Card and it's Children Elements Styles */
+    .card {
+        @apply w-[385px] bg-white border-[1px] rounded-[20px] border-black flex flex-col p-[24px] gap-[24px] shadow-[8px_8px_0_0_#000000] transition-all max-[430px]:w-[85%] max-[430px]:p-[18px];
+    }
+
+    .card .card-content {
+        @apply flex flex-col gap-[12px] items-start;
+    }
+
+    .card .card-category {
+        @apply bg-primary rounded-[4px] px-[12px] py-[4px] text-g-950;
+    }
+
+    .card .card-author {
+        @apply flex items-center gap-[12px] text-preset-3-bold text-g-950;
+    }
+}

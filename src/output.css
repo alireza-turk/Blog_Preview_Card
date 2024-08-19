@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Figtree-500';
+  font-family: 'figtree-500';
 
   src: url('.././assets/fonts/Figtree-Medium.ttf');
 
@@ -7,14 +7,14 @@
 }
 
 @font-face {
-  font-family: 'Figtree-800';
+  font-family: 'figtree-800';
 
   src: url('.././assets/fonts/Figtree-ExtraBold.ttf');
 
   font-weight: 800;
 }
 
-body{
+body {
   font-size: 16px;
 }
 
@@ -574,7 +574,182 @@ video {
   --tw-contain-style:  ;
 }
 
-.bg-gray-500 {
+.text-preset-1 {
+  font-family: figtree-800;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0em;
+}
+
+.text-preset-2 {
+  font-family: figtree-500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0em;
+}
+
+.text-preset-3 {
+  font-family: figtree-500;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0em;
+}
+
+.text-preset-3-bold {
+  font-family: figtree-800;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0em;
+}
+
+/* Blog Card and it's Children Elements Styles */
+
+.card {
+  display: flex;
+  width: 385px;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 20px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: hsl(0 0% 42% / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 24px;
+  --tw-shadow: 8px 8px 0 0 #000000;
+  --tw-shadow-colored: 8px 8px 0 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+@media (max-width: 430px) {
+  .card {
+    width: 85%;
+    padding: 18px;
+  }
+}
+
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.card .card-category {
+  border-radius: 4px;
+  --tw-bg-opacity: 1;
+  background-color: hsl(47 88% 63% / var(--tw-bg-opacity));
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 7% / var(--tw-text-opacity));
+}
+
+.card .card-author {
+  font-family: figtree-800;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0em;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 7% / var(--tw-text-opacity));
+}
+
+.flex {
+  display: flex;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.w-\[32px\] {
+  width: 32px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.rounded-\[10px\] {
+  border-radius: 10px;
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: hsl(47 88% 63% / var(--tw-bg-opacity));
+}
+
+.text-g-500 {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 42% / var(--tw-text-opacity));
+}
+
+.text-g-950 {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 7% / var(--tw-text-opacity));
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:translate-x-\[8px\]:hover {
+  --tw-translate-x: 8px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:translate-y-\[8px\]:hover {
+  --tw-translate-y: 8px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:text-primary:hover {
+  --tw-text-opacity: 1;
+  color: hsl(47 88% 63% / var(--tw-text-opacity));
+}
+
+.hover\:shadow-none:hover {
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (max-width: 430px) {
+  .max-\[430px\]\:text-\[11px\] {
+    font-size: 11px;
+  }
+
+  .max-\[430px\]\:text-\[12px\] {
+    font-size: 12px;
+  }
+
+  .max-\[430px\]\:text-\[16px\] {
+    font-size: 16px;
+  }
 }
