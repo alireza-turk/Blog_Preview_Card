@@ -1,0 +1,22 @@
+{
+  "name": "blog-preview-card",
+  "version": "1.0.0",
+  "description": "![Design preview for the Blog preview card coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alireza-turk/Blog_Preview_Card.git"
+  },
+  "author": "Alireza Ahmadiyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alireza-turk/Blog_Preview_Card/issues"
+  },
+  "homepage": "https://github.com/alireza-turk/Blog_Preview_Card#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}
