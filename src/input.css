@@ -37,7 +37,8 @@ body {
 
     /* Blog Card and it's Children Elements Styles */
     .card {
-        @apply w-[385px] bg-white border-[1px] rounded-[20px] border-black flex flex-col p-[24px] gap-[24px] shadow-[8px_8px_0_0_#000000] transition-all max-[430px]:w-[85%] max-[430px]:p-[18px];
+        @apply w-[385px] bg-white border-[1px] rounded-[20px] border-black flex flex-col p-[24px] gap-[24px] shadow-[8px_8px_0_0_#000000] max-[430px]:w-[85%] max-[430px]:p-[18px];
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .card .card-content {
